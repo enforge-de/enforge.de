@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-[Headers](#headers)
+[Status](#status)
+[Purpose](#purpose)
 
 
 <a name="status"/>
