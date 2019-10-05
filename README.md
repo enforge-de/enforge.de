@@ -2,8 +2,9 @@
 
 ## Table of Contents
 
-[Status](#status)
-[Purpose](#purpose)
+* [Status](#status)
+
+* [Purpose](#purpose)
 
 
 <a name="status"/>
