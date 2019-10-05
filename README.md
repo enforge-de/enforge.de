@@ -3,7 +3,6 @@
 ## Table of Contents
 
 * [Status](#status)
-
 * [Purpose](#purpose)
 
 
