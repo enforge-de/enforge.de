@@ -28,11 +28,13 @@ const Home = () => (
 
     <CenterContainer>
       <div>
-        Almost nothing to see here.
+        This page is about Till Hoffmann.
       </div>
       <br/>
       <div>
-        <Button as='a' secondary icon='github' href="https://github.com/enforge.de" />
+        <Button as='a' secondary icon='github' href="https://github.com/shuroc" />
+        <Button as='a' secondary icon='xing' href="https://www.xing.com/profile/Till_Hoffmann21" />
+        <Button as='a' secondary icon='linkedin' href="https://linkedin.com/in/till-h-9879b6182/" />
       </div>
     </CenterContainer>
   </div >
