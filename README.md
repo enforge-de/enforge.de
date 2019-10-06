@@ -19,6 +19,6 @@
 
 This repository contains the current status of the website enforge.de hosted at netlify.
 
-## Gotchas
+## Notes
 
-Due to bug with next-scss (https://github.com/zeit/next.js/issues/8909) next version "^9.0.8-canary.4" is used.
+Since several cotchas occured on trying to use semantic-ui with next.js, the template from https://github.com/skydiver/nextjs-semantic was used.

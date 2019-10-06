@@ -1,6 +1,16 @@
-import 'semantic-ui-css/semantic.min.css'
-import "../styles.scss"
+import styled from 'styled-components';
 
-export default () => (
-  <div className="center">Almost nothing to see here.</div>
-)
+const CenterContainer = styled.div`
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Home = () => (
+  <CenterContainer>
+    Almost nothing to see here.
+  </CenterContainer>
+);
+export default Home;
