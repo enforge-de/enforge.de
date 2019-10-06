@@ -1,5 +1,5 @@
 import 'semantic-ui-css/semantic.min.css'
-import "../styles.scss"
+import "styles.scss"
 
 export default () => (
     <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
