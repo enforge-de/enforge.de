@@ -2,7 +2,7 @@ const withPlugins = require('next-compose-plugins');
 const css = require('@zeit/next-css');
 
 const nextConfig = {
-  target: 'serverless',
+  //target: 'serverless',
   webpack(config) {
     config.module.rules.push({
       test: /\.(png|svg|eot|otf|ttf|woff|woff2)$/,
