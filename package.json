@@ -6,7 +6,9 @@
     "deploy": "npm run build && npm run export"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "^9.0.7",
+    "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
