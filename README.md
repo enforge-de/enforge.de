@@ -18,3 +18,7 @@
 ## Purpose
 
 This repository contains the current status of the website enforge.de hosted at netlify.
+
+## Gotchas
+
+Due to bug with next-scss (https://github.com/zeit/next.js/issues/8909) next version "^9.0.8-canary.4" is used.
