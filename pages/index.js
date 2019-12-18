@@ -32,7 +32,7 @@ const Home = () => (
       </div>
       <br/>
       <div>
-        <Button as='a' secondary icon='github' href="https://github.com/enforge.de" />
+        <Button as='a' secondary icon='github' href="https://github.com/enforge-de" />
       </div>
     </CenterContainer>
   </div >
