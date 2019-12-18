@@ -32,7 +32,7 @@ const Home = () => (
       </div>
       <br/>
       <div>
-        <Button as='a' secondary icon='github' href="https://github.com/shuroc" />
+        <Button as='a' secondary icon='github' href="https://github.com/tillhoff" />
         <Button as='a' secondary icon='xing' href="https://www.xing.com/profile/Till_Hoffmann21" />
         <Button as='a' secondary icon='linkedin' href="https://linkedin.com/in/till-h-9879b6182/" />
       </div>
