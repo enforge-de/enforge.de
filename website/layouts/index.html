@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="centercontainer">
+  <div>
+    {{ .Content }}
+  </div>
+  <br/>
+  <div>
+    {{ range .Params.links }}
+      <a class="ui secondary icon button" href="{{ .url }}">
+        <svg class="icon" viewBox={{ .icon.viewbox }}><path d="{{ .icon.svg }}"></path></svg>
+      </a>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

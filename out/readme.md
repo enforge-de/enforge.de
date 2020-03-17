@@ -1,1 +1,0 @@
-This file exists solely to the purpose that the containing directoy is saved in git.

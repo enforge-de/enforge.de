@@ -18,7 +18,3 @@
 ## Purpose
 
 This repository contains the current status of the website enforge.de hosted at netlify.
-
-## Notes
-
-Since several cotchas occured on trying to use semantic-ui with next.js, the template from https://github.com/skydiver/nextjs-semantic was used.
