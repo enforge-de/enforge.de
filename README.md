@@ -10,7 +10,7 @@
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b29dfe53-c3f4-4d65-8d49-865b74e6cb1f/deploy-status)](https://app.netlify.com/sites/enforge/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a82e4c1-88c1-4873-9ac3-c7e4e7647f2d/deploy-status)](https://app.netlify.com/sites/enforge-de/deploys)
 
 
 <a name="purpose"/>
