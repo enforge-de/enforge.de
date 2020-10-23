@@ -1,5 +1,11 @@
 {{ define "main" -}}
-<div class="main">
-hi
+<div class="vertical">
+  <p>Almost nothing to see here.</p>
+
+  <div class="fill">
+    <button class="inline">yo</button>
+    <img src="icons/github.svg">
+    <button class="inline">yo2</button>
+  </div>
 </div>
 {{- end }}

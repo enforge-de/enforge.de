@@ -2,12 +2,8 @@
 .navigation {
   width: 100%;
 
-  color: hsla(0,0%,90%,1);
-  {{ $navigationBgColorHue := 0 -}}
-  {{ $navigationBgColorSaturation := "0%" -}}
-  {{ $navigationBgColorLightness := "10%" -}}
-  {{ $navigationBgColorAlpha := 1 -}}
-  background-color: hsla({{ $navigationBgColorHue }}, {{ $navigationBgColorSaturation }}, {{ $navigationBgColorLightness }}, {{ $navigationBgColorAlpha }});
+  color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ .css.colors.siteBgColor.lightness }}, {{ .css.colors.siteColor.alpha }});  
+  background-color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ .css.colors.siteColor.lightness }}, {{ .css.colors.siteColor.alpha }});
 
   display: flex;
   justify-content: center;
@@ -40,6 +36,6 @@
   border-left: none;
 }
 .navigation.element:hover {
-  background-color: hsla({{ $navigationBgColorHue }}, {{ $navigationBgColorSaturation }}, {{ incPercentage "10%" $navigationBgColorLightness }}, {{ $navigationBgColorAlpha }});
+  background-color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ incPercentage "10%" .css.colors.siteColor.lightness }}, {{ .css.colors.siteColor.alpha }});
 }
 {{- end }}

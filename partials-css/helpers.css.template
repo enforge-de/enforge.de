@@ -13,6 +13,16 @@
   align-items: center;
 }
 
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.fill {
+  display: flex;
+  justify-content: space-around;
+}
+
 a.nolink,
 a.nolink:hover,
 a.nolink:active,

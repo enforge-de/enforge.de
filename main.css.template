@@ -14,6 +14,7 @@
 
 * {
   font-family: "Open Sans", sans-serif;
+  color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ .css.colors.siteColor.lightness }}, {{ .css.colors.siteColor.alpha }});
 }
 
 body {
@@ -26,6 +27,11 @@ body {
   background-color: hsla({{ .css.colors.siteBgColor.hue }}, {{ .css.colors.siteBgColor.saturation }}, {{ .css.colors.siteBgColor.lightness }}, {{ .css.colors.siteBgColor.alpha }});
 
   font-size: {{ .css.fontsize }};
+}
+
+.page {
+  height: calc(100vh - (2* {{ .css.navigation.padding }}) - 16px); /* 16px is somehow  */
+  width: 100%;
 }
 
 {{ template "navigation" . }}
