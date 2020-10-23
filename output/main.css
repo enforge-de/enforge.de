@@ -1,0 +1,117 @@
+@import "normalize.min.css";
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background-color: hsla(0, 0%, 80%, 1)
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 60vw;
+}
+
+.navigation {
+  width: 100%;
+
+  color: hsla(var(--secondary-hue),var(--secondary-saturation),var(--secondary-lightness),var(--secondary-alpha));
+  background-color: hsla(var(--secondary-bg-colorhue),var(--secondary-bg-colorsaturation),var(--secondary-bg-colorlightness),var(--secondary-bg-coloralpha));
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.navigation > .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.navigation .element {
+  border-color: var(--secondary-color);
+
+  border-style: solid;
+  border-width: var(--border-width);
+}
+
+:not(.grouped) {
+  border-radius: 5px;
+}
+
+.grouped {
+  border-radius: 0;
+}
+.grouped:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.grouped:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.grouped:not(:last-child) {
+  border-right: none;
+}
+
+/* general button styling */
+button,
+.button {
+  padding: 10px;
+
+  transition-duration: 0.2s;
+
+  /* unify button styling */
+  display: inline;
+  float: left;
+  outline: none;
+  cursor: default;
+
+  /* border */
+  border-style: solid;
+  border-width: 2px;
+
+  /* default button colors */
+  color: hsla(0, 0%, 0%, 1);
+  background-color: hsla(0, 0%, 50%, 1);
+  border-color: hsla(0, 0%, 20%, 1);
+}
+
+/* inline button */
+button.inline,
+.button.inline {
+  float: none;
+}
+
+/* primary button styling */
+button.primary,
+.primary.button {
+  color: hsla(0,100%,43%,1);
+  background-color: hsla(60,100%,27%,1);
+}
+/* secondary button styling */
+button.secondary,
+.secondary.button {
+  color: hsla(240,100%,43%,1);
+  background-color: hsla(120,100%,43%,1);
+}
+
+/* hover button styling */
+button:hover,
+.button:hover {
+  background-color: hsla(0, 0%, 70%, 1);
+}
+button.primary:hover,
+.button.primary:hover {
+  background-color: hsla(60, 100%, 47%, 1);
+}
+button.secondary:hover,
+.button.secondary:hover {
+  background-color: hsla(120, 100%, 63%, 1);
+}

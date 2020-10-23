@@ -5,15 +5,9 @@
 * [Status](#status)
 * [Purpose](#purpose)
 
-
-<a name="status"/>
-
 ## Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a82e4c1-88c1-4873-9ac3-c7e4e7647f2d/deploy-status)](https://app.netlify.com/sites/enforge-de/deploys)
-
-
-<a name="purpose"/>
 
 ## Purpose
 
