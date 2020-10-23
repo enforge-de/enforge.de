@@ -4,6 +4,8 @@ button,
 .button {
   padding: 10px;
 
+  font-size: inherit;
+
   transition-duration: {{ .css.animations.transitionDuration }};
 
   /* unify button styling */
@@ -15,6 +17,7 @@ button,
   /* border */
   border-style: solid;
   border-width: {{ .css.borders.width }};
+  border-radius: {{ .css.borders.radius }};
 
   /* default button colors */
   {{ $buttonColorHue := 0 -}}

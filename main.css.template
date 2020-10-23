@@ -1,4 +1,20 @@
+/* open-sans-regular - latin */
+/* partially taken from https://google-webfonts-helper.herokuapp.com/fonts/open-sans?subsets=latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
 @import "normalize.min.css";
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
 
 body {
   display: flex;
@@ -6,19 +22,16 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background-color: hsla({{ .css.colors.siteBgColor.hue }}, {{ .css.colors.siteBgColor.saturation }}, {{ .css.colors.siteBgColor.lightness }}, {{ .css.colors.siteBgColor.alpha }})
-}
 
-.hidden {
-  display: none;
-}
+  background-color: hsla({{ .css.colors.siteBgColor.hue }}, {{ .css.colors.siteBgColor.saturation }}, {{ .css.colors.siteBgColor.lightness }}, {{ .css.colors.siteBgColor.alpha }});
 
-.container {
-  width: 60vw;
+  font-size: {{ .css.fontsize }};
 }
 
 {{ template "navigation" . }}
 
+{{ template "buttons" . }}
+
 {{ template "grouped-borders" . }}
 
-{{ template "buttons" . }}
+{{ template "helpers" . }}

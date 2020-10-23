@@ -1,6 +1,9 @@
 title: example-website
 
 css:
+
+  fontsize: 14px;
+
   colors:
     primaryColor:
       hue: 0

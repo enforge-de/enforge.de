@@ -2,8 +2,12 @@
 .navigation {
   width: 100%;
 
-  color: hsla(var(--secondary-hue),var(--secondary-saturation),var(--secondary-lightness),var(--secondary-alpha));
-  background-color: hsla(var(--secondary-bg-colorhue),var(--secondary-bg-colorsaturation),var(--secondary-bg-colorlightness),var(--secondary-bg-coloralpha));
+  color: hsla(0,0%,90%,1);
+  {{ $navigationBgColorHue := 0 -}}
+  {{ $navigationBgColorSaturation := "0%" -}}
+  {{ $navigationBgColorLightness := "10%" -}}
+  {{ $navigationBgColorAlpha := 1 -}}
+  background-color: hsla({{ $navigationBgColorHue }}, {{ $navigationBgColorSaturation }}, {{ $navigationBgColorLightness }}, {{ $navigationBgColorAlpha }});
 
   display: flex;
   justify-content: center;
@@ -17,9 +21,25 @@
 }
 
 .navigation .element {
-  border-color: var(--secondary-color);
+
+  padding: 0.8em;
+
+  {{ $navigationBorderColorHue := 0 -}}
+  {{ $navigationBorderColorSaturation := "0%" -}}
+  {{ $navigationBorderColorLightness := "20%" -}}
+  {{ $navigationBorderColorAlpha := 1 -}}
+  border-color: hsla({{ $navigationBorderColorHue }}, {{ $navigationBorderColorSaturation }}, {{ $navigationBorderColorLightness }}, {{ $navigationBorderColorAlpha }});
 
   border-style: solid;
-  border-width: var(--border-width);
+  border-width: {{ .css.borders.width }};
+  border-top: none;
+  border-bottom: none;
+  border-right: none; /* goes together with .navigation.element:first-child */
+}
+.navigation.element:first-child {
+  border-left: none;
+}
+.navigation.element:hover {
+  background-color: hsla({{ $navigationBgColorHue }}, {{ $navigationBgColorSaturation }}, {{ incPercentage "10%" $navigationBgColorLightness }}, {{ $navigationBgColorAlpha }});
 }
 {{- end }}
