@@ -1,11 +1,19 @@
 {{ define "main" -}}
-<div class="vertical">
-  <p>Almost nothing to see here.</p>
+<div class="vertical spaced">
+  <span>Almost nothing to see here.</span>
 
-  <div class="fill">
-    <button class="inline">yo</button>
-    <img src="icons/github.svg">
-    <button class="inline">yo2</button>
+  <div class="buttons">
+    <button class="big icon">
+      <i class="github icon"></i>
+    </button>
+
+    <button class="large inverted icon">
+      <i class="xing icon"></i>
+    </button>
+
+    <button class="icon">
+      <i class="linkedin icon"></i>
+    </button>
   </div>
 </div>
 {{- end }}

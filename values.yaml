@@ -2,7 +2,8 @@ title: example-website
 
 css:
 
-  fontsize: 14px
+  generalsize: 1em # size of elements
+  fontsize: 0.9em
 
   colors:
     primaryColor:
@@ -49,3 +50,10 @@ css:
 
   navigation:
     padding: 0.8em
+
+factors:
+  icons: 1.7
+  sizes:
+    regular: 0.8
+    large: 1
+    big: 1.2

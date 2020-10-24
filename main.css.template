@@ -40,4 +40,6 @@ body {
 
 {{ template "grouped-borders" . }}
 
+{{ template "icons" . }}
+
 {{ template "helpers" . }}

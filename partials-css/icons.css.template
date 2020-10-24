@@ -1,0 +1,20 @@
+{{/* include this _before_ button template! */}}
+{{ define "icons" -}}
+i.icon {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+
+
+i.icon.github {
+  background-image: url(icons/github.svg);
+}
+i.icon.linkedin {
+  background: url(icons/linkedin.svg) no-repeat center center;
+}
+i.icon.xing {
+  background: url(icons/xing.svg) no-repeat center center;
+}
+{{- end }}
