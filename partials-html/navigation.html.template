@@ -1,8 +1,8 @@
 {{ define "navigation" -}}
 <div class="navigation">
   <div class="container">
-    <a href="./index.html" class="grouped nolink navigation element" >enforge.de</a>
-    <a href="./tillhoff/index.html" class="grouped nolink navigation element" >Till Hoffmann</a>
+    <a href="/" class="grouped nolink navigation element" >enforge.de</a>
+    <a href="/tillhoff" class="grouped nolink navigation element" >Till Hoffmann</a>
   </div>
 </div>
 {{- end }}
