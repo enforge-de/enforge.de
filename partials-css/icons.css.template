@@ -1,11 +1,20 @@
 {{/* include this _before_ button template! */}}
 {{ define "icons" -}}
 .icon > svg {
-  height: 100%;
-  width: 100%;
+  height: calc({{ .css.fontsize }} * {{ .factors.icons }});
+  width: calc({{ .css.fontsize }} * {{ .factors.icons }});
   display: inline-block;
 
   fill: hsla({{ .css.colors.buttonColor.hue }}, {{ .css.colors.buttonColor.saturation }}, {{ .css.colors.buttonColor.lightness }}, {{ .css.colors.buttonColor.alpha }});
+}
+
+.large.icon > svg {
+  height: calc({{ .css.fontsize }} * {{ .factors.icons }} * {{ .factors.sizes.large }});
+  width: calc({{ .css.fontsize }} * {{ .factors.icons }} * {{ .factors.sizes.large }});
+}
+.big.icon > svg {
+  height: calc({{ .css.fontsize }} * {{ .factors.icons }} * {{ .factors.sizes.big }});
+  width: calc({{ .css.fontsize }} * {{ .factors.icons }} * {{ .factors.sizes.big }});
 }
 
 .inverted.icon > svg {

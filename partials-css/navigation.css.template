@@ -17,7 +17,7 @@
 }
 
 .navigation .element {
-  padding: 0.8em;
+  padding: 0.8rem;
 
   {{ $navigationBorderColorHue := 0 -}}
   {{ $navigationBorderColorSaturation := "0%" -}}

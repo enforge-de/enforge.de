@@ -15,6 +15,7 @@
 * {
   font-family: "Open Sans", sans-serif;
   color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ .css.colors.siteColor.lightness }}, {{ .css.colors.siteColor.alpha }});
+  box-sizing: content-box; /* remove strange behaviour of some native elements - looking at you _button_! */
 }
 
 body {

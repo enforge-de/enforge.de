@@ -2,8 +2,8 @@ title: example-website
 
 css:
 
-  generalsize: 1em # size of elements
-  fontsize: 0.9em
+  generalsize: 1rem # size of elements
+  fontsize: 0.9rem
 
   colors:
     primaryColor:
@@ -44,18 +44,18 @@ css:
     buttonColor:
       hue: 0
       saturation: 0%
-      lightness: 10%
+      lightness: 10% # equal to site color looks good
       alpha: 1
     buttonBgColor:
       hue: 0
       saturation: 0%
-      lightness: 90%
+      lightness: 90% # equal to site bg color looks good
       alpha: 1
     
     borderColor:
       hue: 0
       saturation: 0%
-      lightness: 20%
+      lightness: 20% # between site color & site bg color looks good
       alpha: 1
 
   borders:
@@ -66,11 +66,11 @@ css:
     transitionDuration: 0.2s
 
   navigation:
-    padding: 0.8em
+    padding: 0.8rem
 
 factors:
-  icons: 1.7
+  icons: 1.2
   sizes:
-    regular: 0.8
-    large: 1
-    big: 1.2
+    #regular: 1 # just for reference - not actually used anywhere
+    large: 1.2
+    big: 1.4

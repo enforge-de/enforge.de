@@ -3,24 +3,23 @@
   <span>Almost nothing to see here.</span>
 
   <div class="buttons">
-    <button class="big icon">
+    <a class="big inverted icon button">
       <svg viewBox="0 0 24 24">
         <use xlink:href="#github"></use>
       </svg>
-    </button>
+    </a>
 
-    <button class="big inverted icon">
-      <!--<svg viewBox="0 0 24 24">
+    <a class="big inverted icon button">
+      <svg viewBox="0 0 24 24">
         <use xlink:href="#xing"></use>
-      </svg>-->
-      hallo
-    </button>
+      </svg>
+    </a>
 
-    <button class="big inverted icon">
+    <a class="big inverted icon button">
       <svg viewBox="0 0 24 24">
         <use xlink:href="#linkedin"></use>
       </svg>
-    </button>
+    </a>
   </div>
 </div>
 {{- end }}
