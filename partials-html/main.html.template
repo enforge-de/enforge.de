@@ -1,18 +1,25 @@
 {{ define "main" -}}
-<div class="vertical spaced">
+<div class="center vertical spaced">
   <span>Almost nothing to see here.</span>
 
   <div class="buttons">
     <button class="big icon">
-      <i class="github icon"></i>
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#github"></use>
+      </svg>
     </button>
 
-    <button class="large inverted icon">
-      <i class="xing icon"></i>
+    <button class="big inverted icon">
+      <!--<svg viewBox="0 0 24 24">
+        <use xlink:href="#xing"></use>
+      </svg>-->
+      hallo
     </button>
 
-    <button class="icon">
-      <i class="linkedin icon"></i>
+    <button class="big inverted icon">
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#linkedin"></use>
+      </svg>
     </button>
   </div>
 </div>

@@ -35,6 +35,6 @@
   border-left: none;
 }
 .navigation.element:hover {
-  background-color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ incPercentage "10%" .css.colors.siteColor.lightness }}, {{ .css.colors.siteColor.alpha }});
+  background-color: hsla({{ .css.colors.siteColor.hue }}, {{ .css.colors.siteColor.saturation }}, {{ addPercentage "10%" .css.colors.siteColor.lightness }}, {{ .css.colors.siteColor.alpha }});
 }
 {{- end }}

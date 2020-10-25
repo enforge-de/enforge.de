@@ -12,6 +12,8 @@
   </head>
   <body>
 
+    {{ template "svgs" . }}
+
     {{ template "navigation" . }}
 
     <div class="center page">

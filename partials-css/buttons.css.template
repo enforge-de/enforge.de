@@ -6,7 +6,7 @@ button,
   {{ $buttonPadding := 0.5 -}} {{/* 0.5 is kind of a random number, but applied on all button paddings */}}
   padding: calc({{ .css.generalsize }} * {{ .factors.sizes.regular }} * {{ $buttonPadding }});
   height: calc({{ .css.generalsize }} * {{ .factors.sizes.regular }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.regular }});
-  min-width: calc({{ .css.generalsize }} * {{ .factors.sizes.regular }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.regular }});
+  width: calc({{ .css.generalsize }} * {{ .factors.sizes.regular }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.regular }});
 
   text-align: center;
 
@@ -26,21 +26,9 @@ button,
   border-radius: {{ .css.borders.radius }};
 
   /* default button colors */
-  {{ $buttonColorHue := 0 -}}
-  {{ $buttonColorSaturation := "0%" -}}
-  {{ $buttonColorLightness := "10%" -}}
-  {{ $buttonColorAlpha := 1 -}}
-  color: hsla({{ $buttonColorHue }}, {{ $buttonColorSaturation }}, {{ $buttonColorLightness }}, {{ $buttonColorAlpha }});
-  {{ $buttonBgColorHue := 0 -}}
-  {{ $buttonBgColorSaturation := "0%" -}}
-  {{ $buttonBgColorLightness := "50%" -}}
-  {{ $buttonBgColorAlpha := 1 -}}
-  background-color: hsla({{ $buttonBgColorHue }}, {{ $buttonBgColorSaturation }}, {{ $buttonBgColorLightness }}, {{ $buttonBgColorAlpha }});
-  {{ $buttonBorderColorHue := 0 -}}
-  {{ $buttonBorderColorSaturation := "0%" -}}
-  {{ $buttonBorderColorLightness := "20%" -}}
-  {{ $buttonBorderColorAlpha := 1 -}}
-  border-color: hsla({{ $buttonBorderColorHue }}, {{ $buttonBorderColorSaturation }}, {{ $buttonBorderColorLightness }}, {{ $buttonBorderColorAlpha }});
+  color: hsla({{ .css.colors.buttonColor.hue }}, {{ .css.colors.buttonColor.saturation }}, {{ .css.colors.buttonColor.lightness }}, {{ .css.colors.buttonColor.alpha }});
+  background-color: hsla({{ .css.colors.buttonBgColor.hue }}, {{ .css.colors.buttonBgColor.saturation }}, {{ .css.colors.buttonBgColor.lightness }}, {{ .css.colors.buttonBgColor.alpha }});
+  border-color: hsla({{ .css.colors.borderColor.hue }}, {{ .css.colors.borderColor.saturation }}, {{ .css.colors.borderColor.lightness }}, {{ .css.colors.borderColor.alpha }});
 }
 
 /* button sizes */
@@ -48,13 +36,13 @@ button.large,
 .button.large {
   padding: calc({{ .css.generalsize }} * {{ .factors.sizes.large }} * {{ $buttonPadding }});
   height: calc({{ .css.generalsize }} * {{ .factors.sizes.large }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.large }});
-  min-width: calc({{ .css.generalsize }} * {{ .factors.sizes.large }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.large }});
+  width: calc({{ .css.generalsize }} * {{ .factors.sizes.large }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.large }});
 }
 button.big,
 .button.big {
   padding: calc({{ .css.generalsize }} * {{ .factors.sizes.big }} * {{ $buttonPadding }});
   height: calc({{ .css.generalsize }} * {{ .factors.sizes.big }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.big }});
-  min-width: calc({{ .css.generalsize }} * {{ .factors.sizes.big }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.big }});
+  width: calc({{ .css.generalsize }} * {{ .factors.sizes.big }} * 2 + {{ .css.fontsize }} * {{ .factors.sizes.big }});
 }
 
 /* inline button */
@@ -76,8 +64,8 @@ button.inline,
 /* inverted button */
 button.inverted,
 .button.inverted {
-  color: hsla({{ $buttonBgColorHue }}, {{ $buttonBgColorSaturation }}, {{ $buttonBgColorLightness }}, {{ $buttonBgColorAlpha }});
-  background-color: hsla({{ $buttonColorHue }}, {{ $buttonColorSaturation }}, {{ $buttonColorLightness }}, {{ $buttonColorAlpha }});
+  color: hsla({{ .css.colors.buttonBgColor.hue }}, {{ .css.colors.buttonBgColor.saturation }}, {{ .css.colors.buttonBgColor.lightness }}, {{ .css.colors.buttonBgColor.alpha }});
+  background-color: hsla({{ .css.colors.buttonColor.hue }}, {{ .css.colors.buttonColor.saturation }}, {{ .css.colors.buttonColor.lightness }}, {{ .css.colors.buttonColor.alpha }});
 }
 
 /* primary button styling */
@@ -96,27 +84,27 @@ button.secondary,
 /* hover button styling */
 button:hover,
 .button:hover {
-  background-color: hsla({{ $buttonBgColorHue }}, {{ $buttonBgColorSaturation }}, {{ incPercentage "20%" $buttonBgColorLightness }}, {{ $buttonBgColorAlpha }});
+  background-color: hsla({{ .css.colors.buttonBgColor.hue }}, {{ .css.colors.buttonBgColor.saturation }}, {{ addPercentage "-20%" .css.colors.buttonBgColor.lightness }}, {{ .css.colors.buttonBgColor.alpha }});
 }
 button.inverted:hover,
 .button.inverted:hover {
-  background-color: hsla({{ $buttonColorHue }}, {{ $buttonColorSaturation }}, {{ incPercentage "20%" $buttonColorLightness }}, {{ $buttonColorAlpha }});
+  background-color: hsla({{ .css.colors.buttonColor.hue }}, {{ .css.colors.buttonColor.saturation }}, {{ addPercentage "20%" .css.colors.buttonColor.lightness }}, {{ .css.colors.buttonColor.alpha }});
 }
 button.primary:hover,
 .button.primary:hover {
-  background-color: hsla({{ .css.colors.primaryBgColor.hue }}, {{ .css.colors.primaryBgColor.saturation }}, {{ incPercentage "20%" .css.colors.primaryBgColor.lightness }}, {{ .css.colors.primaryBgColor.alpha }});
+  background-color: hsla({{ .css.colors.primaryBgColor.hue }}, {{ .css.colors.primaryBgColor.saturation }}, {{ addPercentage "20%" .css.colors.primaryBgColor.lightness }}, {{ .css.colors.primaryBgColor.alpha }});
 }
 button.primary.inverted:hover,
 .button.primary.inverted:hover {
-  background-color: hsla({{ .css.colors.primaryColor.hue }}, {{ .css.colors.primaryColor.saturation }}, {{ incPercentage "20%" .css.colors.primaryColor.lightness }}, {{ .css.colors.primaryColor.alpha }});  
+  background-color: hsla({{ .css.colors.primaryColor.hue }}, {{ .css.colors.primaryColor.saturation }}, {{ addPercentage "20%" .css.colors.primaryColor.lightness }}, {{ .css.colors.primaryColor.alpha }});  
 }
 button.secondary:hover,
 .button.secondary:hover {
-  background-color: hsla({{ .css.colors.secondaryBgColor.hue }}, {{ .css.colors.secondaryBgColor.saturation }}, {{ incPercentage "20%" .css.colors.secondaryBgColor.lightness }}, {{ .css.colors.secondaryBgColor.alpha }});
+  background-color: hsla({{ .css.colors.secondaryBgColor.hue }}, {{ .css.colors.secondaryBgColor.saturation }}, {{ addPercentage "20%" .css.colors.secondaryBgColor.lightness }}, {{ .css.colors.secondaryBgColor.alpha }});
 }
 button.secondary.inverted:hover,
 .button.primary.inverted:hover {
-  background-color: hsla({{ .css.colors.secondaryColor.hue }}, {{ .css.colors.secondaryColor.saturation }}, {{ incPercentage "20%" .css.colors.secondaryColor.lightness }}, {{ .css.colors.secondaryColor.alpha }});
+  background-color: hsla({{ .css.colors.secondaryColor.hue }}, {{ .css.colors.secondaryColor.saturation }}, {{ addPercentage "20%" .css.colors.secondaryColor.lightness }}, {{ .css.colors.secondaryColor.alpha }});
 }
 
 /* icon button */

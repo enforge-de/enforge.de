@@ -41,6 +41,23 @@ css:
       lightness: 90%
       alpha: 1
 
+    buttonColor:
+      hue: 0
+      saturation: 0%
+      lightness: 10%
+      alpha: 1
+    buttonBgColor:
+      hue: 0
+      saturation: 0%
+      lightness: 90%
+      alpha: 1
+    
+    borderColor:
+      hue: 0
+      saturation: 0%
+      lightness: 20%
+      alpha: 1
+
   borders:
     radius: 5px
     width: 2px

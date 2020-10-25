@@ -1,20 +1,14 @@
 {{/* include this _before_ button template! */}}
 {{ define "icons" -}}
-i.icon {
+.icon > svg {
   height: 100%;
   width: 100%;
   display: inline-block;
+
+  fill: hsla({{ .css.colors.buttonColor.hue }}, {{ .css.colors.buttonColor.saturation }}, {{ .css.colors.buttonColor.lightness }}, {{ .css.colors.buttonColor.alpha }});
 }
 
-
-
-i.icon.github {
-  background-image: url(icons/github.svg);
-}
-i.icon.linkedin {
-  background: url(icons/linkedin.svg) no-repeat center center;
-}
-i.icon.xing {
-  background: url(icons/xing.svg) no-repeat center center;
+.inverted.icon > svg {
+  fill: hsla({{ .css.colors.buttonBgColor.hue }}, {{ .css.colors.buttonBgColor.saturation }}, {{ .css.colors.buttonBgColor.lightness }}, {{ .css.colors.buttonBgColor.alpha }});
 }
 {{- end }}
