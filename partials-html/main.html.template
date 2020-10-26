@@ -3,23 +3,10 @@
   <span>Almost nothing to see here.</span>
 
   <div class="buttons">
-    <a class="big inverted icon button">
+    <a class="big inverted icon button" href="https://github.com/enforge-de">
       <svg viewBox="0 0 24 24">
         <use xlink:href="#github"></use>
       </svg>
     </a>
-
-    <a class="big inverted icon button">
-      <svg viewBox="0 0 24 24">
-        <use xlink:href="#xing"></use>
-      </svg>
-    </a>
-
-    <a class="big inverted icon button">
-      <svg viewBox="0 0 24 24">
-        <use xlink:href="#linkedin"></use>
-      </svg>
-    </a>
-  </div>
 </div>
 {{- end }}

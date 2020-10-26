@@ -17,7 +17,7 @@
     {{ template "navigation" . }}
 
     <div class="center page">
-      {{ template "main" . }}
+      {{ template "tillhoff" . }}
     </div>
 
   </body>
