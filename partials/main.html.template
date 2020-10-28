@@ -1,4 +1,4 @@
-{{ define "main" -}}
+{{ define "main.html" -}}
 <div class="center vertical spaced">
   <span>Almost nothing to see here.</span>
 

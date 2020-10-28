@@ -1,4 +1,4 @@
-{{ define "helpers" -}}
+{{ define "helpers.css" -}}
 .hidden {
   display: none;
 }

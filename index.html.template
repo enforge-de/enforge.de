@@ -5,19 +5,22 @@
     <title>enforge.de</title>
 
     <!-- style -->
-    <link rel="stylesheet" href="/main.css">
+    <!-- <link rel="stylesheet" href="/main.css"> -->
+    <style>
+      {{ template "critical.css" . }}
+    </style>
 
     <!-- javascript -->
     <script type="text/javascript" src="/main.js"></script>
   </head>
   <body>
 
-    {{ template "svgs" . }}
+    {{ template "svgs.html" . }}
 
-    {{ template "navigation" . }}
+    {{ template "navigation.html" . }}
 
     <div class="center page">
-      {{ template "main" . }}
+      {{ template "main.html" . }}
     </div>
 
   </body>

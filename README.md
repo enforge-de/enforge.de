@@ -20,4 +20,4 @@ I used my own two projects for building this site:
 - [serve](https://github.com/tillhoff/serve) as local development webserver
 
 The `Taskfile.yml` contains the used commands for them and simplifies development further.
-> Before starting those tasks, make sure to download a binary for each of them and put them in this folder.
+> Before starting those tasks, check whether the paths work.

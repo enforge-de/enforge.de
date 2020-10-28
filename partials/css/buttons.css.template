@@ -1,4 +1,4 @@
-{{ define "buttons" -}}
+{{ define "buttons.css" -}}
 /* general button styling */
 button,
 .button {

@@ -1,4 +1,4 @@
-{{ define "navigation" -}}
+{{ define "navigation.css" -}}
 .navigation {
   width: 100%;
 

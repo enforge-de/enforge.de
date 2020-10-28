@@ -1,4 +1,4 @@
-{{ define "grouped-borders" -}}
+{{ define "grouped-borders.css" -}}
 button.grouped,
 .button.grouped {
   border-radius: 0;

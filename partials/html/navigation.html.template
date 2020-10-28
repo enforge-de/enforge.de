@@ -1,4 +1,4 @@
-{{ define "navigation" -}}
+{{ define "navigation.html" -}}
 <div class="navigation">
   <div class="container">
     <a href="/" class="grouped nolink navigation element" >enforge.de</a>

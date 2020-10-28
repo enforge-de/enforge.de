@@ -7,14 +7,13 @@ silent: true
 tasks:
   build:
     cmds:
-      - "./temingo{{ .EXTENSION }} -values values.yaml -inputDir . -partialsDir partials-html -outputDir output -templateFileExtension .html.template -generatedFileExtension .html"
-      - "./temingo{{ .EXTENSION }} -values values.yaml -inputDir . -partialsDir partials-css -outputDir output -templateFileExtension .css.template -generatedFileExtension .css"
+      - "../temingo/temingo{{ .EXTENSION }} -values values.yaml -inputDir . -partialsDir partials -outputDir output -templateFileExtension .html.template -partialFileExtension .template -generatedFileExtension .html"
     vars:
       EXTENSION: '{{ if eq OS "windows" }}.exe{{ end }}'
 
   serve:
     dir: output
     cmds:
-      - "../serve{{ .EXTENSION }}"
+      - "../../serve/serve{{ .EXTENSION }}"
     vars:
       EXTENSION: '{{ if eq OS "windows" }}.exe{{ end }}'

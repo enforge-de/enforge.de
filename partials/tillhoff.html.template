@@ -1,4 +1,4 @@
-{{ define "tillhoff" -}}
+{{ define "tillhoff.html" -}}
 <div class="center vertical spaced">
   <span>Hey there! I'm Till.</span>
 
