@@ -5,10 +5,12 @@
     <title>enforge.de</title>
 
     <!-- style -->
-    <!-- <link rel="stylesheet" href="/main.css"> -->
+    <!-- normally, normalize would be optimally loaded by the following line - but because I want this integrated in the critical css, its disabled -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" onerror="this.onerror=null;this.href="/normalize.min.css"> -->
     <style>
       {{ template "critical.css" . }}
     </style>
+    <!-- <link rel="stylesheet" href="/main.css"> -->
 
     <!-- javascript -->
     <!-- <script type="text/javascript" src="/main.js"></script> -->
