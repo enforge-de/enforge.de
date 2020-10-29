@@ -1,6 +1,5 @@
 {{ define "critical.css" -}}
-/* open-sans-regular - latin */
-/* partially taken from https://google-webfonts-helper.herokuapp.com/fonts/open-sans?subsets=latin */
+/* open-sans-regular */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face {
   font-family: "Open Sans";
