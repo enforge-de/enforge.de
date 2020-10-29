@@ -16,7 +16,12 @@
   box-sizing: content-box; /* remove strange behaviour of some native elements - looking at you _button_! */
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
