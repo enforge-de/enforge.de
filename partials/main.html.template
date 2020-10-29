@@ -8,5 +8,6 @@
         <use xlink:href="#github"></use>
       </svg>
     </a>
+  </div>
 </div>
 {{- end }}

@@ -32,9 +32,16 @@ body {
 }
 
 .page {
-  height: calc(100vh - (2* {{ .css.navigation.padding }}) - {{ .css.fontsize }});
+  height: calc(100vh - 4* {{ .css.navigation.padding }} - {{ .css.fontsize }});
   width: 100%;
 }
+@media only screen and (min-width:768px) {
+  .page {
+    height: calc(100vh - (2* {{ .css.navigation.padding }}) - {{ .css.fontsize }}); /* corresponds to navigation.css */
+  }
+}
+
+{{ template "helpers.css" . }}
 
 {{ template "navigation.css" . }}
 
@@ -43,6 +50,4 @@ body {
 {{ template "grouped-borders.css" . }}
 
 {{ template "icons.css" . }}
-
-{{ template "helpers.css" . }}
 {{- end }}

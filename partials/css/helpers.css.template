@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 60vw;
+  width: 95vh;
 }
 
 .center {
@@ -42,4 +42,9 @@ a.nolink:visited {
   text-decoration: none;
 }
 
+@media only screen and (min-width:1150px) {
+  .container {
+    max-width: 1092px; /* 95% of 1150 */
+  }
+}
 {{- end }}
