@@ -8,7 +8,7 @@
     <!-- normally, normalize would be optimally loaded by the following line - but because I want this integrated in the critical css, its disabled -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" onerror="this.onerror=null;this.href="/normalize.min.css"> -->
     <style>
-      {{ template "critical.css" . }}
+{{ include "critical.css" . | nindent 4 | safecss }}
     </style>
     <!-- <link rel="stylesheet" href="/main.css"> -->
 
@@ -18,12 +18,12 @@
   </head>
   <body>
 
-    {{ template "svgs.html" . }}
+{{ include "svgs.html" . | nindent 4 | safehtml }}
 
-    {{ template "navigation.html" . }}
+{{ include "navigation.html" . | nindent 4 | safehtml }}
 
     <div class="center page">
-      {{ template "main.html" . }}
+{{ include "main.html" . | nindent 6 | safehtml }}
     </div>
 
   </body>
