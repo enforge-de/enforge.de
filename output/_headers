@@ -3,7 +3,7 @@
   Content-Security-Policy: frame-ancestors 'none'; script-src 'sha256-biLFinpqYMtWHmXfkA1BPeCY0/fNt46SAZ+BBk5YUog=' 'sha256-iQ6002Q28VhY3ebjsV3C7qmMVB/n3828UrcG8t24/G4=' 'sha256-lj5TO87GH4M371Sdj2IuuI4EQCmhRGU874wIGRUuk7k=';
 
   X-XSS-Protection: 1; mode=block
-  X-Frame-Options: "DENY"
-  X-Content-Type-Options: "nosniff"
-  Referrer-Policy: "no-referrer"
-  Feature-Policy: "microphone 'none'; geolocation 'none'"
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Feature-Policy: microphone 'none'; geolocation 'none'
