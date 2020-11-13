@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <!-- normally, normalize would be optimally loaded by the following line - but because I want this integrated in the critical css, its disabled -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" onerror="this.onerror=null;this.href="/normalize.min.css"> -->
     <style>
-{{ include "critical.css" . | nindent 4 | safecss }}
+{{ include "critical.css" . | nindent 6 | safecss }}
     </style>
     <!-- <link rel="stylesheet" href="/main.css"> -->
 
