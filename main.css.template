@@ -10,7 +10,7 @@
        url('fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
-@import "normalize.min.css";
+@import "/normalize.min.css";
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -35,12 +35,12 @@ body {
   width: 100%;
 }
 
-{{ template "navigation" . }}
+{{ template "navigation.css" . }}
 
-{{ template "buttons" . }}
+{{ template "buttons.css" . }}
 
-{{ template "grouped-borders" . }}
+{{ template "grouped-borders.css" . }}
 
-{{ template "icons" . }}
+{{ template "icons.css" . }}
 
-{{ template "helpers" . }}
+{{ template "helpers.css" . }}

@@ -6,14 +6,17 @@ silent: true
 
 tasks:
   build:
-    desc: Build the templated files
+    desc: Build the files / templating
     cmds:
-      - "../temingo/temingo{{ .EXTENSION }} -values values.yaml -inputDir . -partialsDir partials -outputDir output -templateFileExtension .html.template -partialFileExtension .template -generatedFileExtension .html"
+      - cmd: '{{ if eq OS "windows" }}powershell -command "rm -path output/* -recurse"{{ else }}rm --recursive output/*{{ end }}'
+        ignore_error: true
+      - "../temingo/temingo{{ .EXTENSION }} --valuesfile values.yaml --inputDir . --partialsDir partials --outputDir output --templateExtension .template --partialExtension .partial"
+      - '{{ if eq OS "windows" }}powershell -command "cp -r static/* output/"{{ else }}cp -r static/* output/{{ end }}'
     vars:
       EXTENSION: '{{ if eq OS "windows" }}.exe{{ end }}'
 
   serve:
-    desc: Serve the generated files locally
+    desc: Start the dev-server
     dir: output
     cmds:
       - "../../serve/serve{{ .EXTENSION }}"

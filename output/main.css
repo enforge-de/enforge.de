@@ -10,7 +10,7 @@
        url('fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
-@import "normalize.min.css";
+@import "/normalize.min.css";
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -47,13 +47,14 @@ body {
 }
 
 .navigation > .container {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
 }
 
 .navigation .element {
-  padding: 0.8rem;
+  padding: calc(2* 0.8rem);
 
   border-color: hsla(0, 0%, 20%, 1);
 
@@ -68,6 +69,20 @@ body {
 }
 .navigation.element:hover {
   background-color: hsla(0, 0%, 20%, 1);
+}
+
+@media only screen and (min-width:768px) {
+  .navigation {
+    order: -1;
+  }
+
+  .navigation > .container {
+    max-width: 1092px; /* 95% of 1150 */
+  }
+
+  .navigation .element {
+    padding: 0.8rem;
+  }
 }
 
 /* general button styling */
@@ -244,7 +259,7 @@ button.grouped:last-child,
 }
 
 .container {
-  width: 60vw;
+  width: 95vh;
 }
 
 .center {
@@ -280,4 +295,10 @@ a.nolink:hover,
 a.nolink:active,
 a.nolink:visited {
   text-decoration: none;
+}
+
+@media only screen and (min-width:1150px) {
+  .container {
+    max-width: 1092px; /* 95% of 1150 */
+  }
 }
