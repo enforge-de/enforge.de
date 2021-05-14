@@ -7,8 +7,8 @@ This repository contains the current status of the website enforge.de.
 ## Local development
 
 I used my own two projects for building this site:
-- [temingo](https://github.com/tillhoff/temingo) as static site generator
-- [serve](https://github.com/tillhoff/serve) as local development webserver
+- [temingo](https://github.com/thetillhoff/temingo) as static site generator
+- [serve](https://github.com/thetillhoff/serve) as local development webserver
 
 The `Taskfile.yml` contains the used commands for them and simplifies development further.
 > Before starting those tasks, check whether the paths work.
